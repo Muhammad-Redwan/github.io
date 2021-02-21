@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Muhammad Redwan</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            MUHAMMAD REDWAN
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#siklls">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class='bx bx-menu-alt-right'></i>
+        </div>
+    </div>
+    <!-------------mobile menu icon-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    <!---------scroll------>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header =document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0 )
+        })
+    </script>
+    <!---------main------->
+    <div class="row">
+        <div class="home " id="home" >
+                <!-----home---->
+                    <div class="col-s-2">
+                        <h1 class="hi">Hi!, i am <span style="color: #2196f3;">MUHAMMAD 
+                        </span> <br> PROGRAMMER</h1>
+                    </div>
+
+                    <div class="col-s-3">
+                        <img src="css/img/mr.jpg">
+                    </div>
+                    <div class="so">
+                        <a href="https://twitter.com/MuhammadRedwa18">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACm0lEQVRYR+2Wz1HbQBTGv0+Y5GLzp4IIGgipAFFB6ABxNM5MTAUhFWAfbB/jdGAqiEuwG8BKBYDNAQ+yXmZliTG2pN1lPBkO3qP07b7fvn/7iHe2+M54sAHSRWTjof/uIbcz8RzwTAQeIC6AAYF+xLAZVPeDFMi9vtvDh203qJUHi5ArIXM7dy6iLS+o7XR1t1n+f9iaXAnxI2+fiJzDYeAIvgrgi/BED9R+rBNyrTbbQLnJPtNLkGjeViv1Zf2Khw7akz6AYyUUYT2olZs6I8r9/FgaAdjTadV/Ar2IcSi/yFPoB5f79+m+QqBE1BeG54vxXzbqtsY+yV8mMAuaBxF62pAddiYNEXxfOvxeiAaewubibVKNLncyQIci9JdhEu+9lqsqoeBP3m1JdqNZ1Au+7dy8AGVfItdhFPy8rVWusgSZjXExj4rDwACQtJQ905AJeBlclBtGQG57fArOBpRSD8BnUyM2OiFOgmpFFc/KykjqcRfgGQCV+UZVYwMTV68NkG0/sYVR+tFFJfcNXe3UcU/ZGgD89BZj2j3EzahaOc0tmqwfKo8IqqdjV2vAUlCU0Jlln57vth6PyKi3Zk89yDR0s3pZajc3lqofYSa7dKjeG+OSLnJYUf8xAipqkJaRUnKtdwpDpn4etF9awBvsv95iOj1oR9ict80OUFNZi4dpgZRYDW1OVPKFcS7Fo4nFGso09IoS2RpoDqUeXTVixGOp6bKC0eZQPM7K9jEhqtKOTCnmOvkt01nd1DOZVZaMHmoskOQds4SIQf4K6ec9nrpLZQ75Dkp1EfiWnXooYDdvrNCBaPtQmjdOBC9JZvUpTejhfBqQQOAMwOde0YhrCqPNIZuD1qU1Kvt1GTM5ZwOk89LGQzoP/QNBYhM07Dd3EQAAAABJRU5ErkJggg=="/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-redwan-b71143206/">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAB/klEQVRYR+2XzU7bQBDH/2PooRIbmr4AJhduCCQuOUHfgF7bA7khm6/kDeAFIAiRoJ5Aau/wBEWVyhGB+JDgYFs8AIQkSICMBxkIBK9jJ5ITIcU+emfn//PszOyY8MEe+mA8iIHCTsQ3QoOF6jAzFoh4CMAJwMumnjgLcxbFugQ0ULwZVdj5D+DzmwBfkoO0MZs4j0I0yIcENLhe+Q3CT+8mAjYMXWidBypU9wEelYQJ/0xNjHccSC1U/xD4h4/wL1MX0x0HSm3cjLHDewB/qhMvP9hIX8yL044DuYKptdIYKz1ZgIdIUY5h3y8bc1+P2g3j+u++xqgWr1TcomTlkqVmIixFSF2vjhDxinczM+Wsmb4D932YjVooTxJoAcBEvR8Cth3wlqUnthvByUDFygQx/kpAhG+WJnafgAJsiDkD0FRg8yOsGprI+tlECuRGgIHJZo6Gwd/9IhUpUDMgdTYHpi6kBtxOoEOAvwA00AiU7+ykN9mjByLs8K2dqQm95JubxP1BeVlbixromu9s1fvVqWIl744zEhAoZ+l9eU8lvjcLqqCwKgNhx9SElNSNfBJjyZgRi20D8hMIahMxUO0o4iN7LVmfJI1z6F3JxhEKGT+6pQ9dqYrTm/HeO45ib1pa0nqumkY22K1dL/X7W7HvviG/xaGtC3+DWo3QI9qBxzT9e3itAAAAAElFTkSuQmCC"/>
+                        </a>
+
+                        <a href="https://github.com/muhammad-Redwan">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAADCElEQVRYR+2Xz3HaQBTGv6dhEh8sYiqISAPGFcSpIEkFxkfkg6GC4AqAA/gYUkHoIKaCQANIVGAP+GBirJdZMERarXaXP5nxZKILM/B296dv358Pwgt76IXx4N8A8tr3JYf4jIESgCMsP8UzAHBHwCACeqHv9je9gY0Uetee1plw+Qxhc9YdE5p4mLfCWuHOZoEVkNeZfCI4DYA9m03TMRQyolro53um9UagZ1W+mDay+Z2A5sh3a7pYLVCxM+kCdGZzmG0MEXVHlcPzrPhMIK9zXyVww/agTeKI0BpV3KpqjRJomTP0Pb6AwZ/BOCKiMoD3lgB9Zu7CoZAYP+T9VDmlBCp2JiFAb2MbDAPfXZU2vOvpKQFVijCIHNzED3IinLKDkgCJH1jsTEVc7EUo5NnjiVx9KSCvPSkT0VdJgX7gu6eWqijD0kAAMa5GF249viAFpFBn0fAC3z3ZN5BoooHvFjKBRAcm4p+Kg3dX6HraA+OjvDcTPoQVd33tCYWyKotpXgwrhXAXhbzrW484J0bLm4QiUsUlgFT3DGBndVYARbVKif2NQKrE21apjK6fyE8JKFXuykrYMxAC311zmIE0XXVTsKy5qAGSm9fiyL+cQzwO/PzaRSQVyirN2bxg62d0qhU7U+GJElUmv7BV2e8jsbOuS947CZTdGMHM5+FFvrtp3oh4TcOFtjGKxdLoGAI4XkEIgxXRvGXbJL3G7REOcpfESMyrPy+VzB/xvXa4ClXw66lHB7mu1PZvmHCj8soCwnmVqzItJrt2IDOoFvqHTe1wXao0FS1+oYxYhNljl17nxLxZq6WrPjunyWOePZWM9mNx58LvxAyVmGVLOXPNZ6WGDK5nmXaVwTMN1VhaqNM07otMPljeQX4h+Xdd1VqbfAEV4fHKJqH1QPwt8PPCBisf49+gDAeZKtf47llANv3MCBTLKVEN66SW+4ceiMdMVI4bsa0VShy09Nvi78uxFmjdYHnMjPomDdVKoXTS3nqmXBIO0RSjUmkroG3Gh+2a/0AmpX4DRE2SNIdwTPMAAAAASUVORK5CYII="/>
+                        </a>
+                    </div>
+                
+        </div>
+            <!-----about---------> 
+        <div class="about" id="About">
+                <div class="title">
+                    <h1>About</h1>
+                </div>
+                <div class="col-s-4">
+                <ul>
+                        <li >
+                            <strong><span style="font-weight: bold; font-size: larger; color: #2196f3;">Age  :</span></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 25 Years
+                            <p>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</p>
+                        </li>
+                        <li>
+                            <strong><span style="font-weight: bold; font-size: larger; color: #2196f3;">Job  :</span></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Student
+                            <p>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</p>
+
+                        </li>
+                        <li>
+                            <strong><span style="font-weight: bold; font-size: larger; color: #2196f3;">Residing :</span></strong> &nbsp;&nbsp;&nbsp; Turkey/Gaziantep
+                            <p>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</p>
+
+                        </li>
+                </ul>     
+                </div>
+                <div class="col-s-5">
+                    <h2>I am <span style="color: #2196f3;">Muhammad Radwan</span> </h2>
+                            <p> a student in computer programming at the Turkish University of Harran.
+                            I like to get into the sea of software lines, and I succeed in turning an idea into a successful project.
+                            Programming is an art the art needs more quality than quantity.</p>
+                </div>
+        </div>
+
+            <!----------siklls-------------->
+        <div class="siklls" id ="siklls">
+                <div class="title">
+                    <h1>Siklls</h1>
+                </div>
+                <div class="col-s-6">
+                    <h1>Software Skills</h1>
+                    <div class="sikllsbox">
+                        <p>85%</p>
+                        <p>Html</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 85%;">
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="sikllsbox">
+                        <p>60%</p>
+                        <p>Css</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 60%;">
+
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="sikllsbox">
+                        <p>80%</p>
+                        <p>wordpress</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 80%;">
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    
+
+                    <div class="sikllsbox">
+                        <p>55%</p>
+                        <p>java</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 55%;">
+
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="sikllsbox">
+                        <p>45%</p>
+                        <p>C#</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 45%;">
+
+                            </div>
+                        </div>
+                    </div>   
+
+                    <div class="sikllsbox">
+                        <p>50%</p>
+                        <p> MySQL</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 50%;">
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="sikllsbox">
+                        <p>60%</p>
+                        <p> Android Studio</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 60%;">
+
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+                <div class="col-s-7">
+                    <h1>Personal skills</h1>
+                    <div class="sikllsbox">
+                        <p>95%</p>
+                        <p>Communication</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 95%;">
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="sikllsbox">
+                        <p>90%</p>
+                        <p>Team Work</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 90%;">
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="sikllsbox">
+                        <p>85%</p>
+                        <p>Leadership</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 85%;">
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="sikllsbox">
+                        <p>85%</p>
+                        <p>Creativity</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 85%;">
+                            
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="sikllsbox">
+                        <p>90%</p>
+                        <p>Self motivation</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 90%;">
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="sikllsbox">
+                        <p>80%</p>
+                        <p>Logical Thinking</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 80%;">
+                                
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="sikllsbox">
+                        <p>80%</p>
+                        <p>Time Management</p>
+                        <div class="sikll">
+                            <div class="sikll_level" style="width: 80%;">
+                                
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+        </div>
+            <!------------contact----------->
+        <div class="Contact" id="Contact">
+                <div class="content">
+                    <h2>Contact me </h2>
+                </div>
+                <div class="col-s-8">
+                    <div class="cont">
+                        <div class="cont_info">
+                            <div class="box">
+                                <div class="icon_co">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABw0lEQVRYR+2X0VHEMAxEVxVACVABlEAH0AFcBUAFcBVABxwdQCfQwZUAFYjZjBMcXRzbSuYmH9HPfTiyn3dl2SdYWMjCeLAC5RxZFZqkkKq+ArgGcJabyDG+B7ATkW2cm7QswNw7FqpN2YrIc5s0BvQD4KR2dsf3exE5LwFSM/kOwKOIENQVqnoK4AXAXc8mkU6YMYUsEOf4ArAREf5WhapeAngDwN9eyAQgTkSFqBQVKwpVpSJUhgodhAdoA4AnLq6prIUJi34BPAS1GrhqICYEyQlxEW0xaWHCom/WDy1X1a4kXECECDumUrcR1IGFCYveqUx7KGYBaiHCgkMWssk9mVPUWGRrzgP036yixhVB8bRYC23BdhbZgWqgkuOTsLBN7VnkAoqpM0C9dm8sHLToqECh4HkBs9/wwuTFORpFlnkVyi0+NF4E5JnYm1MNpKo8ZUP3Wcdg3zI1cB6gURjb8mtgQs35O3VqsbjlHwOoa4wjQN03JRabeeLGm38PTdlxZe6niNy0OcV/g4ICvKdsNE2yomXE+WyiV/GDb06grMVmJ2yeH/ZJPBtQpU3Jz4uB5lowN88KtCqUUyA3vrga+gNDa/cloAiNYQAAAABJRU5ErkJggg=="/>
+                                </div>
+                                <div class="text_co">
+                                    <h3>Email</h3>
+                                    <p>muhammed.ridvan323@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="box">
+                                <div class="icon_co">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACVElEQVRYR+2WjzEDQRjF36uADlAB6YAOqAAVkApQASpABahAVEAHqIAOPvMyu5kvm93bO7kzMWNnMubWXvaX973vD7FiiyvGg78JZGZXAE4AXJEcD6lqVSEzuwVw6CBuSR4PBdUIlIGJHINBFYEyMB8ANoZWKguUgbkjefQb4VsAMrMdAC9OiSlMfB4aKgd0DuAsADyS3E8NnIG6Jnnah9FrQBckBbiwzOzde4pkNWPbAOeAFJ6b8PJcuBrCNqhCuwCewuXPJPU8W65Ixr0sdBs1cmdyCq0D+IyH01CYmZUM/1MI/14p7b0/9khOXLheAWyH52OSquS9rRJQ7F26aM4fZqZsugwEE5J7vdEA+W5vZkr1+3DRO8ktp9AmgDcHMafgsnBNrcOHbS40SR16JTlaFmTm2dIXmZkvkDWVis226+jSpJCyTSqtBegxSXlruhIvaUtm1xmfAJ1Hl9r44VX6AjAiKcgIlV6ofQFpX/Vr1gNdJBpHl2q5T1qEVJCJBeeVEnhUMueC1qNLGyBfuXXZwi80M2WeoPxkGcE6jS5VoOAX39+mUMEvM6XCOYGpZOi8imdaw6qeagUULku/TOE78J5qk/q10aU1UIDyFVxbUuic5HUbGOe74ujSCagQPm3rAoHd1cB6Vcj9QhldIfRDfwR7APBA8jmFK83q/lxnhfzLoZqr2ZZSXjVJYZXfNKv7cTg7Ry0FFEKoii4oZVaqWCmCxaFuaaBEMSmgcOpvCa5x3O0VKIGTcgqTapM+WvKWwldcgwHVsq30/3+gmnIrp9A3puUbNFKClOEAAAAASUVORK5CYII="/>
+                                </div>
+                                <div class="text_co">
+                                    <h3>Phone</h3>
+                                    <p>+905050068524</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!------------------from----------->
+            <div class="col-s-9">
+                    <div class="form">
+                        <form>
+                            <h2>Send message</h2>
+                            <div class="inputbox">
+                                <input type="text" name="" required="required">
+                                <span>Full name</span>
+                            </div>
+
+                            <div class="inputbox">
+                                <input type="text" name="" required="required">
+                                <span>Email</span>
+                            </div>
+
+                            <div class="inputbox">
+                                <textarea required="required"></textarea>
+                                <span>Type your message <pan>
+                            </div>
+                            <div class="inputbox">
+                                <input type="submit" name="" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>     
+</body>
+</html>
