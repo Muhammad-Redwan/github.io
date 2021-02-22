@@ -595,7 +595,7 @@ h1{
     }
     .col-s-5 {
         width: 100%;
-        height: auto;
+        height: 40vh;
         overflow: hidden;
         margin-left: 0;
     }
@@ -603,7 +603,7 @@ h1{
         width: 100%;
         overflow: hidden;
         margin-left: 0;
-        height: auto;
+        height: 40vh;
     }
     .col-s-8 {
         
