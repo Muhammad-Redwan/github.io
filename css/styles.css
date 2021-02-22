@@ -584,7 +584,7 @@ h1{
         width: 100%;
         padding: 20px;
         margin-top: -1em;
-        
+        margin-left: -1em;
         background: #333;
     }
     
@@ -599,8 +599,6 @@ h1{
     .col-s-5 {
         width: 100%;
         height: 60vh;
-
-        height: 40vh;
         overflow: hidden;
         margin-left: 0;
     }
@@ -608,9 +606,7 @@ h1{
         width: 100%;
         overflow: hidden;
         margin-left: 0;
-
          height: 40vh;;
-        height: 40vh;
     }
     .col-s-8 {
         
@@ -618,7 +614,6 @@ h1{
     }
     .col-s-3 img {
         margin-left: 1.3em;
-        margin-left: 1em;
     }
     .cont .cont_info .box .text_co {
        
