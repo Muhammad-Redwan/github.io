@@ -1,3 +1,15 @@
+<?php
+    $to = 'muhammed.ridvan323@gmail.com';
+    $subject = 'Contact form';
+    $headers = 'form' . $email "\r\n" ;
+    
+    mail($to,$subject,$message,$headers);
+
+    user ='';
+    email ='';
+    message ='';
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +58,7 @@
         <div class="home " id="home" >
                 <!-----home---->
                     <div class="col-s-2">
-                        <h1 class="hi">Hi!, I am <span style="color: #2196f3;">MUHAMMAD 
+                        <h1 class="hi">Hi!, i am <span style="color: #2196f3;">MUHAMMAD 
                         </span> <br> PROGRAMMER</h1>
                     </div>
 
@@ -281,17 +293,17 @@
                         <form>
                             <h2>Send message</h2>
                             <div class="inputbox">
-                                <input type="text" name="" required="required">
+                                <input type="text" name="user" required="required">
                                 <span>Full name</span>
                             </div>
 
                             <div class="inputbox">
-                                <input type="text" name="" required="required">
+                                <input type="text" name="email" required="required">
                                 <span>Email</span>
                             </div>
 
                             <div class="inputbox">
-                                <textarea required="required"></textarea>
+                                <textarea name="message" required="required"></textarea>
                                 <span>Type your message <pan>
                             </div>
                             <div class="inputbox">
